@@ -6,8 +6,8 @@
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
-  config.vm.box = "jedgil/opsweekly"
-
+  # config.vm.box = "jedgil/opsweekly" # if atlas is behaving properly
+  config.vm.box = "opsweekly.box" # if working from local .box file
   # config.vm.box_check_update = false
 
   config.vm.network :forwarded_port, guest: 80, host: 4567
