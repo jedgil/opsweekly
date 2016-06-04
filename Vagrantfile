@@ -2,12 +2,9 @@
 # vi: set ft=ruby :
 
   Vagrant.configure(2) do |config|
-  # The most common configuration options are documented and commented below.
-  # For a complete reference, please see the online documentation at
-  # https://docs.vagrantup.com.
 
   config.vm.box = "jedgil/opsweekly" # if atlas is behaving properly
-  # config.vm.box = "opsweekly.box" # if working from local .box file
+  # config.vm.box = "opsweekly-tiny.box" # if working from local .box file
   # config.vm.box_check_update = false
 
   config.vm.network :forwarded_port, guest: 80, host: 4567
@@ -37,6 +34,11 @@
 
     # Customize the amount of memory on the VM:
     vb.memory = "4096"
+
+    # disable USB
+    vb.customize ["modifyvm", :id, "--usb", "off"]
+    vb.customize ["modifyvm", :id, "--usbehci", "off"]
+
   end
 
 end
