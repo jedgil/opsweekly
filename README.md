@@ -2,9 +2,9 @@
 
 you want to launch my clumsy config of opsweekly? god help you, but here's what you do:
 
-1. Download and Install (https://www.vagrantup.com/downloads.html "Vagrant").
+1. Download and Install [Vagrant](https://www.vagrantup.com/downloads.html).
 
-2. Download and Install (https://www.virtualbox.org/wiki/Downloads "VirtualBox").
+2. Download and Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
 3. Clone this repo and navigate to it.
 
