@@ -4,6 +4,7 @@
   Vagrant.configure(2) do |config|
 
   config.vm.box = "jedgil/opsweekly" # if atlas is behaving properly
+  # config.vm.box_url = "scp://atlas.hashicorp.com/jedgil/boxes/opsweekly/versions/1.2.2/providers/virtualbox.box" # troubleshooting http download problems on work network
   # config.vm.box = "opsweekly-tiny.box" # if working from local .box file
   # config.vm.box_check_update = false
 
@@ -24,8 +25,6 @@
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  # config.vm.synced_folder "../data", "/vagrant_data"
-  # config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
   config.vm.synced_folder ".", "/home/vagrant/vagrantshare", :mount_options => ["dmode=777", "fmode=666"]
 
   config.vm.provider "virtualbox" do |vb|
