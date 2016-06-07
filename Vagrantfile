@@ -4,7 +4,6 @@
   Vagrant.configure(2) do |config|
 
   config.vm.box = "jedgil/opsweekly" # if atlas is behaving properly
-  # config.vm.box_url = "scp://atlas.hashicorp.com/jedgil/boxes/opsweekly/versions/1.2.2/providers/virtualbox.box" # troubleshooting http download problems on work network
   # config.vm.box = "opsweekly-tiny.box" # if working from local .box file
   # config.vm.box_check_update = false
 
